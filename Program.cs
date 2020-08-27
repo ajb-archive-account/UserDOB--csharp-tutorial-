@@ -20,22 +20,14 @@ namespace UserDOB
 
             var userInput = Console.ReadLine();
 
-            var parsedDate = DateTimeOffset.MinValue;
-
-            var dateSuccess = DateTimeOffset.TryParse(userInput, out parsedDate);
-
-            if (dateSuccess)
-            {
+            if (DateTimeOffset.TryParse(userInput, out var parsedDate)) // parse userInput to a variable (bool)
                 return parsedDate;
-            }
             else
             {
                 Console.WriteLine("That's not a valid date.");
-
+                
                 return AskForDOB(); // Bad idea, Stack Overflow!!
             }
-
-
         }
     }
 }
