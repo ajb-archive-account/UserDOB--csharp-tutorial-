@@ -16,18 +16,22 @@ namespace UserDOB
 
         public static DateTimeOffset AskForDOB()
         {
-            Console.WriteLine($"Please enter your date of birth in { CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern}");
+            var dateOfBirth = DateTimeOffset.MaxValue;
 
-            var userInput = Console.ReadLine();
-
-            if (DateTimeOffset.TryParse(userInput, out var parsedDate)) // parse userInput to a variable (bool)
-                return parsedDate;
-            else
+            while (dateOfBirth > DateTimeOffset.UtcNow)
             {
-                Console.WriteLine("That's not a valid date.");
-                
-                return AskForDOB(); // Bad idea, Stack Overflow!!
+                Console.WriteLine($"Please enter your date of birth in { CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern}");
+
+                var userInput = Console.ReadLine();
+
+                if (DateTimeOffset.TryParse(userInput, out var parsedDate)) // parse userInput to a variable (bool)
+                    dateOfBirth = parsedDate;
+                else
+                    Console.WriteLine("That's not a valid date.");
             }
+            
+            return dateOfBirth;
         }
     }
 }
+
