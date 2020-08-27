@@ -1,0 +1,12 @@
+/Users/andybyers/Developer/UserDOB/obj/Debug/netcoreapp3.1/UserDOB.csprojAssemblyReference.cache
+/Users/andybyers/Developer/UserDOB/obj/Debug/netcoreapp3.1/UserDOB.AssemblyInfoInputs.cache
+/Users/andybyers/Developer/UserDOB/obj/Debug/netcoreapp3.1/UserDOB.AssemblyInfo.cs
+/Users/andybyers/Developer/UserDOB/obj/Debug/netcoreapp3.1/UserDOB.csproj.CoreCompileInputs.cache
+/Users/andybyers/Developer/UserDOB/bin/Debug/netcoreapp3.1/UserDOB.deps.json
+/Users/andybyers/Developer/UserDOB/bin/Debug/netcoreapp3.1/UserDOB.runtimeconfig.json
+/Users/andybyers/Developer/UserDOB/bin/Debug/netcoreapp3.1/UserDOB.runtimeconfig.dev.json
+/Users/andybyers/Developer/UserDOB/bin/Debug/netcoreapp3.1/UserDOB.dll
+/Users/andybyers/Developer/UserDOB/bin/Debug/netcoreapp3.1/UserDOB.pdb
+/Users/andybyers/Developer/UserDOB/obj/Debug/netcoreapp3.1/UserDOB.dll
+/Users/andybyers/Developer/UserDOB/obj/Debug/netcoreapp3.1/UserDOB.pdb
+/Users/andybyers/Developer/UserDOB/obj/Debug/netcoreapp3.1/UserDOB.genruntimeconfig.cache
