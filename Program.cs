@@ -7,12 +7,12 @@ namespace UserDOB
     {
         static void Main(string[] args)
         {
-            IntroduceSavvy();
+            IntroduceDave();
 
             var UserDOB = AskForDOB();
         }
 
-        public static void IntroduceSavvy() => Console.WriteLine("Hello, I am Savvy. The worlds worst AI");
+        public static void IntroduceDave() => Console.WriteLine("Hello, I am Dave. The worlds worst AI");
 
         public static DateTimeOffset AskForDOB()
         {
@@ -24,7 +24,7 @@ namespace UserDOB
 
                 var userInput = Console.ReadLine();
 
-                if (DateTimeOffset.TryParse(userInput, out var parsedDate)) // parse userInput to a variable (bool)
+                if (DateTimeOffset.TryParse(userInput, out var parsedDate)) // parse `usereInput` to a (bool) variable.
                     dateOfBirth = parsedDate;
                 else
                     Console.WriteLine("That's not a valid date.");
